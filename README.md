@@ -9,4 +9,4 @@ StdID | Name
 62765 | Ayesha Aman
 
 ## Description ##
-This repository contains assignments and project submitted to DM course offered in Fall 2020 at PafKiet
+This repository contains assignments and project submitted to CC course offered in Spring 2021 at PafKiet
