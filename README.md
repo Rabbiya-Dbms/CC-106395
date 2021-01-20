@@ -1,8 +1,8 @@
 # CC-106395
 Compiler Construction Repository
 
-#CC 106395 Spring 2021: Course Repository#
-###PROJECT MEMBERS###
+# CC 106395 Spring 2021: Course Repository #
+### PROJECT MEMBERS ###
 StdID | Name
 ------------ | -------------
 *63372* | *Rabbiya Mehmood* 
