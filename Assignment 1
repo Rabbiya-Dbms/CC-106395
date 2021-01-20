@@ -1,6 +1,6 @@
-#Java Compiler or Interpreter?
+# Java Compiler or Interpreter? 
 
-##Answer:
+## Answer:
 java uses both compiler as well as interpreter.
 
 java code converts into byte code through compiler than interpreture converts this byte code into machine language code. 
