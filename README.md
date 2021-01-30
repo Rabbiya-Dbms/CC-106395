@@ -5,7 +5,7 @@ Compiler Construction Repository
 ### PROJECT MEMBERS ###
 StdID | Name
 ------------ | -------------
-*63372* | *Rabbiya Mehmood* 
+*63372* | *Rabbiya mehmood* 
 62765 | Ayesha Aman
 
 ## Description ##
