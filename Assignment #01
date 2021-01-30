@@ -11,3 +11,10 @@ java uses both compiler as well as interpreter.
 java code converts into byte code through compiler than interpreture converts this byte code into machine language code. 
 
 JIT also used in place of interpreter makes program execution fast it also converts byte code into machine code.
+
+
+
+
+A compiled program is faster to run than an interpreted program, but it takes more time to compile and run a program than to just interpret it. A compiler indeed produces faster programs. It happens fundamentally because it must analyze each statement just once, while an interpreter must analyze it each time.
+
+
