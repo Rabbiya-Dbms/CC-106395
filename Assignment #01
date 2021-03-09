@@ -18,3 +18,7 @@ JIT also used in place of interpreter makes program execution fast it also conve
 A compiled program is faster to run than an interpreted program, but it takes more time to compile and run a program than to just interpret it. A compiler indeed produces faster programs. It happens fundamentally because it must analyze each statement just once, while an interpreter must analyze it each time.
 
 
+Refrences: 
+https://www.urbanpro.com/java/is-java-a-compiler-or-interpreter
+https://www.edureka.co/blog/interpreter-in-java/
+https://www.programiz.com/article/difference-compiler-interpreter
