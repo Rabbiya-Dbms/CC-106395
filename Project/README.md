@@ -1,5 +1,6 @@
 ##CC Spring 2021: Project Phase 1##
-###PROJECT MEMBERS###
+
+##PROJECT MEMBERS##
 StdID | Name
 ------------ | -------------
 **63372** | **Rabbiya Mehmood** 
