@@ -13,6 +13,99 @@ Teeny Tiny Language
 
 ## Example of main constructs ##
 ```
+sample program:
+
+ INT f2(INT x, INT y ) 
+ BEGIN 
+    INT z;
+    z := x*x - y*y;
+    RETURN z; 
+ END 
+ INT MAIN f1() 
+ BEGIN
+    INT x;
+    READ(x, "A41.input");
+    INT y;
+    READ(y, "A42.input");
+    INT z;
+    z := f2(x,y) + f2(y,x);
+    WRITE (z, "A4.output"); 
+ END
+
+While Loop:
+
+PRINT "How many fibonacci numbers do you want?"
+INPUT nums
+
+LET a = 0
+LET b = 1
+WHILE nums > 0 REPEAT
+    PRINT a
+    LET c = a + b
+    LET a = b
+    LET b = c
+    LET nums = nums - 1
+ENDWHILE	
+
+IF,ENDIF Loop:
+
+LET minsofar = 0
+LET maxsofar = 0
+LET sum = 0
+
+LET num = 0
+PRINT "Enter number of inputs: "
+INPUT num
+
+LET i = 0
+LET c = 0
+WHILE i < num REPEAT
+    INPUT c
+    IF i == 0 THEN
+        LET minsofar = c
+        LET maxsofar = c
+    ENDIF
+    IF i != 0 THEN
+        IF c < minsofar THEN
+            LET minsofar = c
+        ENDIF
+        IF c > maxsofar THEN
+            LET maxsofar = c
+        ENDIF
+    ENDIF
+    LET sum = sum + c
+    LET i = i + 1
+ENDWHILE
+
+PRINT "Min: "
+PRINT minsofar
+PRINT "Max: "
+PRINT maxsofar
+PRINT "Sum: "
+PRINT sum
+PRINT "Avg: "
+PRINT sum / num
+
+--------------------------
+
+rread x ; iif  0 < x 
+ thhen   fact := 1 ;
+   rpeat     fact = fact * x ; 
+    x := x - 1   untl x = 0 ;
+     writte x eend
+
+
+Loop:
+
+read x;
+if 0<x then
+    fact:=1;
+    repeat
+        fact:=fact*x;
+        x:=x-1
+    until x=0;
+    write fact
+end
 
 
 ```
