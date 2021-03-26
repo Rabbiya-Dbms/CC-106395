@@ -31,8 +31,8 @@ Repeat | =         |       Identifier(1 or more letters)
 Until  | <        |
 Read   | (        |
 Write  | )        |
-   -    |   ;       |
-  -     |  :=       |
+none    |   ;       |
+  none    |  :=       |
        
 Tiny language tokens are divided into three groups: keywords, special symbols, and other tokens.
 
