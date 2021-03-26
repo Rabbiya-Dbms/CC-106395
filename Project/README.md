@@ -31,8 +31,8 @@ Repeat | =         |       Identifier(1 or more letters)
 Until  | <        |
 Read   | (        |
 Write  | )        |
-       |   ;       |
-       |  :=       |
+   -    |   ;       |
+  -     |  :=       |
        
 Tiny language tokens are divided into three groups: keywords, special symbols, and other tokens.
 
@@ -59,15 +59,19 @@ Comments: string between /** and **/. Comments can be longer than one line.
 
 ## CFG for Tiny ##
 for program structure, statements and expressions:
+------------------------------------------------------------
+Program -> MethodDecl MethodDecl*
 
-Program -> MethodDecl MethodDecl* 
 Type -> INT | REAL |STRING 
+
 MethodDecl -> Type [MAIN] Id '(' FormalParams ')' Block
+
 FormalParams -> [FormalParam ( ',' FormalParam )* ]
+
 FormalParam -> Type Id
 
 Block -> BEGIN Statement+ END
-
+-------------------------------------------------------------
 Statement -> Block
            | LocalVarDecl  
            | AssignStmt   
@@ -80,19 +84,27 @@ LocalVarDecl -> Type Id ';' | Type AssignStmt
 
 AssignStmt  -> Id := Expression ';'
            |  Id := QString ';'
+	   
 ReturnStmt -> RETURN Expression ';'
+
 IfStmt    -> IF '(' BoolExpression ')' Statement
             | IF '(' BoolExpression ')' Statement ELSE Statement
+	    
 WriteStmt -> WRITE '(' Expression ',' QString ')' ';'
-ReadStmt  -> READ '(' Id ',' QString ')' ';'
 
+ReadStmt  -> READ '(' Id ',' QString ')' ';'
+----------------------------------------------------------------------
 Expression -> MultiplicativeExpr  (( '+' | '-' ) MultiplicativeExpr)*
+
 MultiplicativeExpr -> PrimaryExpr (( '*' | '/' ) PrimaryExpr)*
+
 PrimaryExpr -> Num  // Integer or Real numbers
              | Id            
              | '(' Expression ')'
              | Id '(' ActualParams ')'
+	     
 BoolExpression -> Expression '==' Expression 
-                 |Expression '!=' Expression   
+                 |Expression '!=' Expression 
+		 
 ActualParams -> [Expression ( ',' Expression)*]
-
+-------------------------------------------------------------------
