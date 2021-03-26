@@ -59,7 +59,7 @@ Comments: string between /** and **/. Comments can be longer than one line.
 
 ## CFG for Tiny ##
 for program structure, statements and expressions:
-------------------------------------------------------------
+
 Program -> MethodDecl MethodDecl*
 
 Type -> INT | REAL |STRING 
@@ -71,7 +71,7 @@ FormalParams -> [FormalParam ( ',' FormalParam )* ]
 FormalParam -> Type Id
 
 Block -> BEGIN Statement+ END
--------------------------------------------------------------
+
 Statement -> Block
            | LocalVarDecl  
            | AssignStmt   
@@ -93,7 +93,7 @@ IfStmt    -> IF '(' BoolExpression ')' Statement
 WriteStmt -> WRITE '(' Expression ',' QString ')' ';'
 
 ReadStmt  -> READ '(' Id ',' QString ')' ';'
-----------------------------------------------------------------------
+
 Expression -> MultiplicativeExpr  (( '+' | '-' ) MultiplicativeExpr)*
 
 MultiplicativeExpr -> PrimaryExpr (( '*' | '/' ) PrimaryExpr)*
@@ -107,4 +107,3 @@ BoolExpression -> Expression '==' Expression
                  |Expression '!=' Expression 
 		 
 ActualParams -> [Expression ( ',' Expression)*]
--------------------------------------------------------------------
