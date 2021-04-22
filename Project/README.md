@@ -1,11 +1,15 @@
-## CC Spring 2021: Project Phase 1 ##
+# CC-106395: Teeny Tiny Parser #
 
-## PROJECT MEMBERS ##
+### PROJECT MEMBERS ###
 StdID | Name
 ------------ | -------------
-**63372** | **Rabbiya Mehmood** 
+**63372** | **Rabbiya Mehmood** <!--this is the group leader in bold-->
 62765 | Ayesha Aman
 
+## Project Description ##
+
+To design a compiler is our project aim we choose the teeny tiny language which is sub language of python as python is a big language 
+in this project first, we select the language in which we make our compiler then we design lexer and lastly parser.
 
 ## Language Selected ##
 
@@ -200,3 +204,17 @@ BoolExpression -> Expression '==' Expression
                  |Expression '!=' Expression 
 		 
 ActualParams -> [Expression ( ',' Expression)*]
+
+## Problems Faced ##
+In phase one there is no problem it was very simple and easy same for phase 2 but when we are doing phase 3 we face some problems like in handling and using and in arangement of code according to equirenments.
+
+### Problem 1: I don't know how to Code ###
+we stuck sometime when creat logics 
+
+### Problem 2: System Hangs and Windows Crashed ###
+after installing ubuntu, windows system got crashed as our fyp is also in progree we face very difficulty whatever we will also discover using ubuntu online
+
+## References ##
+[1]Kuznetsov, A. S., et al. "Compiler-compiler of multi syntax programming languages for creating N-version software." Journal of Physics: Conference Series. Vol. 1333. No. 7. IOP Publishing, 2019.
+[2]Penev, Ivaylo, and Milena Karova. "Implementation of a Training Parser Using Explicit Abstract Syntax Tree." Proceedings of the 20th International Conference on Computer Systems and Technologies. 2019.
+[3]Levine, John. Flex & Bison: Text Processing Tools. " O'Reilly Media, Inc.", 2009.
