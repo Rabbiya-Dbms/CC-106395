@@ -1,4 +1,4 @@
-## Scanner Example ##
+## Scanner Example Phase 2 maybe like it was just an example ##
 
 
 /* scanner for a toy Pascal-like language */
