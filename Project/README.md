@@ -11,6 +11,8 @@ StdID | Name
 To design a compiler is our project aim we choose the teeny tiny language which is sub language of python as python is a big language 
 in this project first, we select the language in which we make our compiler then we design lexer and lastly parser.
 
+- write grammar  in yacc when program runs flex parserize it in tokens streams then give it tw yacc parser to generate an output stream
+
 ## Language Selected ##
 
 Teeny Tiny Language
