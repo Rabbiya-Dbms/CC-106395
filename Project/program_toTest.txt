@@ -1,0 +1,17 @@
+
+
+PRGRM  abc;
+WAR
+a, b, c, d, e, f : INTGR ;
+BEGINS
+a = 13 ;
+               b = 23;
+               WRITELN(a) ;   
+               d = 124 ;
+               c = a + 2 * ( a + d ) ;
+               e = c + b * d;
+               f = e * c;
+               WRITELN(c) ;
+               WRITELN(e);
+               WRITELN(f); 
+ENDS
