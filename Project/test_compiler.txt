@@ -1,0 +1,16 @@
+INITIATE  ConvertedCode;
+DECL
+a, b, c, d  : NUM ;
+GO
+               a = 100;
+               b = 12;
+	       c = 88;
+               writeln(a);
+               writeln(c);
+               writeln(b);
+	       c = c + 12;
+	       d = 11;
+	       d = d - 1 ;   
+               writeln(d);
+               writeln(c); 
+STOP
