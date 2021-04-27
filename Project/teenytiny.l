@@ -1,3 +1,8 @@
+## commands to run ##
+## $ flex -o teenytiny.c teenytiny.l
+   $ gcc teenytiny.c -o teenytiny.run -lfl
+   ./tinylex.run ##
+
 %{                                                               /* Literal block */
 #include "scanner.h"                                             /* Scanner header file */
 
