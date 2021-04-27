@@ -7,14 +7,14 @@ class Parser:
         self.lexer = lexer
         self.emitter = emitter
 
-        self.symbols = set()    # var declared
-        self.labelsDeclared = set() # lables declared
-        self.labelsGotoed = set() 
+        self.symbols = set()    # All variables we have declared so far.
+        self.labelsDeclared = set() # Keep track of all labels declared
+        self.labelsGotoed = set() # All labels goto'ed, so we know if they exist or not.
 
         self.curToken = None
         self.peekToken = None
         self.nextToken()
-        self.nextToken()    # to initialize
+        self.nextToken()    # Call this twice to initialize current and peek.
 
     # Return true if the current token matches.
     def checkToken(self, kind):
@@ -69,7 +69,7 @@ class Parser:
                 self.abort("Attempting to GOTO to undeclared label: " + label)
 
 
-    # statements
+    # One of the following statements...
     def statement(self):
         # Check the first token to see what kind of statement this is.
 
@@ -232,7 +232,7 @@ class Parser:
             self.emitter.emit(self.curToken.text)
             self.nextToken()
         elif self.checkToken(TokenType.IDENT):
-         
+            # Ensure the variable already exists.
             if self.curToken.text not in self.symbols:
                 self.abort("Referencing variable before assignment: " + self.curToken.text)
 
@@ -242,6 +242,7 @@ class Parser:
             # Error!
             self.abort("Unexpected token at " + self.curToken.text)
 
+    # nl ::= '\n'+
     def nl(self):
         # Require at least one newline.
         self.match(TokenType.NEWLINE)
