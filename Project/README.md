@@ -214,7 +214,7 @@ In phase one there is no problem it was very simple and easy same for phase 2 bu
 we stuck sometime when creat logics 
 
 ### Problem 2: System Hangs and Windows Crashed ###
-after installing ubuntu, windows system got crashed as our fyp is also in progree we face very difficulty whatever we will also discover using ubuntu online
+after installing ubuntu, windows system got crashed as our fyp is also in progree we face very difficulty whatever we will also discover using ubuntu online but it was not fulfill our requirenments.
 
 ## References ##
 [1]Kuznetsov, A. S., et al. "Compiler-compiler of multi syntax programming languages for creating N-version software." Journal of Physics: Conference Series. Vol. 1333. No. 7. IOP Publishing, 2019.
